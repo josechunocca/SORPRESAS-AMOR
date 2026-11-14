@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#170d19">
+<title>Una sorpresa para ti ❤️</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">♡ PARA TI Y YO</div>
+  <div class="top-note">Una pequeña sorpresa hecha con amor</div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Una sorpresa especial</div>
+      <!-- PERSONALIZAR: cambia estos nombres por los de tu cliente -->
+      <h1>Para <em>mi persona</em><br>favorita.</h1>
+      <p>Entre tantas personas en el mundo, qué bonito haber coincidido contigo. Preparé este pequeño rincón para recordarte lo especial que eres.</p>
+      <a class="pill" href="#recuerdos" style="text-decoration:none">Hay algo para ti ♥</a>
+      <div class="scroll-hint">DESLIZA DESPACIO ↓</div>
+    </div>
+  </section>
+<section class="music-section" id="musica">
+  <div class="music-card">
+    <div class="music-disc">♫</div>
+
+    <p class="music-label">NUESTRA BANDA SONORA</p>
+    <h2>Esta canción me recuerda a ti ❤️</h2>
+    <p>Hay melodías que guardan nuestros mejores recuerdos.</p>
+
+    <audio id="miCancion" controls preload="metadata">
+      <source src="MUSICA/romantica.mp3" type="audio/mpeg">
+      Tu navegador no puede reproducir este audio.
+    </audio>
+
+    <p class="music-note">
+      Ponte tus audífonos y disfruta nuestra canción.
+    </p>
+  </div>
+</section>
+<section class="recuerdos">
+
+    <h2 class="fecha-recuerdo">
+        15 de febrero de 2026
+    </h2>
+
+    <div class="album">
+
+        <button class="flecha izquierda" onclick="cambiarFoto(-1)">
+            ‹
+        </button>
+
+        <div class="marco-carrusel" id="marcoCarrusel">
+
+            <div class="polaroid">
+                <img src="imagen/image1.jpg" alt="Nuestro recuerdo">
+                <p>Te amo</p>
+            </div>
+
+            <div class="polaroid">
+                <img src="imagen/image2.jpg" alt="Nuestro recuerdo">
+                <p>Un momento inolvidable</p>
+            </div>
+
+            <div class="polaroid">
+                <img src="imagen/image3.jpg" alt="Nuestro recuerdo">
+                <p>Siempre juntos</p>
+            </div>
+
+            <div class="polaroid">
+                <img src="imagen/imagen4.jpg" alt="Nuestro recuerdo">
+                <p>Mi persona favorita</p>
+            </div>
+
+        </div>
+
+        <button class="flecha derecha" onclick="cambiarFoto(1)">
+            ›
+        </button>
+
+    </div>
+
+    <div class="indicadores" id="indicadores"></div>
+
+    <p class="instruccion">
+        ← DESLIZA PARA VER MÁS →
+    </p>
+    <p class="nombres">
+        Mijael & Lucero
+    </p>
+
+</section>
+
+  <section class="letter-area" id="carta">
+    <div class="section-head">
+      <div class="eyebrow">Abre cuando estés listo/a</div>
+      <h2>Hay algo que quiero decirte…</h2>
+      <p>Toca el sobre para descubrir la carta.</p>
+    </div>
+    <div class="envelope-wrap">
+      <button class="envelope" id="envelopeBtn" aria-expanded="false" aria-controls="loveLetter">
+        <div>
+          <div class="seal">💌</div>
+          <strong>Una carta para ti</strong>
+          <small>Toca aquí para abrir tu sorpresa</small>
+        </div>
+      </button>
+      <article class="letter" id="loveLetter">
+        <h3>Mi persona favorita,</h3>
+        <!-- PERSONALIZAR: reemplaza el texto por el mensaje del cliente -->
+        <p>No es difícil pararse a pensar todo lo que hemos vivido hasta ahora. Han sido 9 meses de conocernos, pasar juntos mucho tiempo, disfrutar, llorar, reír y sobre todo, aprender a adaptarnos el uno al otro sin cambiar
+           nuestra esencia. En este tiempo me he dado cuenta de que te quiero y lo hago más de lo que pensaba. </p>
+        <p>Sin embargo, parándome a pensar me he dado cuenta de algo: creemos que hemos vivido mucho pero es aún más lo que nos queda por vivir. 
+        Viviremos momentos malos, en los que parecerá que pesa más eso que otra cosa, en los que nos enfadaremos (y mucho) y espero y deseo que en esos momentos, aún pudiendo odiarme, te siga compensando estar a mi lado. </p>
+        <p>También sé que viviremos momentos muy buenos, que compensarán sin duda a los malos, en los que querremos mucho y muy bien. Que iremos evolucionando, que tomaremos decisiones (algunas nos costarán más que otras) y que lo haremos todo juntos. </p>
+        <p>Pensar en todo lo que nos queda por vivir es una forma de confirmarme que quiero seguir viviendo esta aventura contigo.</p>
+        <p>No se me ocurre mejor persona con la que haber pasado estos meses y con la que pasar el resto de mi vida .Gracias por hacerme tan feliz y por ponerlo todo tan fácil. </p>
+        <p>Gracias por lo que hemos vivido y lo que aún nos queda por vivir. Contigo a mi lado la vida es muchísimo mejor.</p>
+        <p>Te quiero mucho , ahora y siempre.</p>
+        <p class="signature">Con todo mi cariño, ❤️</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div class="eyebrow">Lo que hace especial nuestra historia</div>
+      <h2>Tres cosas que guardo en el corazón</h2>
+    </div>
+    <div class="story-grid">
+      <article class="story">
+        <div class="number">01 ♡</div>
+        <h3>El primer recuerdo</h3>
+        <p>Ese momento que siempre nos hace sonreír cuando lo contamos.</p>
+      </article>
+      <article class="story">
+        <div class="number">02 ✨</div>
+        <h3>Lo que más admiro</h3>
+        <p>Tu forma de ser, tus pequeños detalles y la alegría que compartimos.</p>
+      </article>
+      <article class="story">
+        <div class="number">03 ∞</div>
+        <h3>Lo que viene</h3>
+        <p>Más planes, más fotos, más aprendizajes y muchas historias por vivir.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="finale">
+    <div class="big-heart">❤️</div>
+    <div class="eyebrow">Y antes de irte…</div>
+    <h2>Esto es solo el comienzo</h2>
+    <p>Guarda esta página como un pequeño recuerdo. Cada vez que la abras, recuerda que alguien se tomó el tiempo de preparar algo solo para ti.</p>
+    <button class="cta" id="heartBtn">Toca para recibir un abrazo virtual ♡</button>
+  </section>
+</main>
+
+<footer>
+  Hecho con cariño, especialmente para ti. ♡<br>
+  <span>sorpresas con un qr</span>
+</footer>
+<script src="javascript.js"></script>
+</body>
+</html>
